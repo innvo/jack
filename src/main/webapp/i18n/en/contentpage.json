@@ -1,0 +1,24 @@
+{
+  "jackApp": {
+    "contentpage": {
+      "home": {
+        "title": "Contentpages",
+        "createLabel": "Create a new Contentpage",
+        "createOrEditLabel": "Create or edit a Contentpage",
+        "search": "Search for Contentpage",
+        "notFound": "No Contentpages found"
+      },
+      "created": "A new Contentpage is created with identifier {{ param }}",
+      "updated": "A Contentpage is updated with identifier {{ param }}",
+      "deleted": "A Contentpage is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Contentpage {{ id }}?"
+      },
+      "detail": {
+        "title": "Contentpage"
+      },
+      "title": "Title",
+      "content": "Content"
+    }
+  }
+}

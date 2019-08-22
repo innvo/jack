@@ -1,0 +1,31 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="contentpage">
+            <h2><span jhiTranslate="jackApp.contentpage.detail.title">Contentpage</span> {{contentpage.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="jackApp.contentpage.title">Title</span></dt>
+                <dd>
+                    <span>{{contentpage.title}}</span>
+                </dd>
+                <dt><span jhiTranslate="jackApp.contentpage.content">Content</span></dt>
+                <dd>
+                    <span>{{contentpage.content}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/contentpage', contentpage.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
